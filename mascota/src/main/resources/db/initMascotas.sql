@@ -1,0 +1,16 @@
+
+CREATE TABLE MASCOTA (
+    ID INT PRIMARY KEY,
+    NOMBRE VARCHAR(50),
+    APELLIDO VARCHAR(50),
+    EDAD INT,
+    TELEFONO VARCHAR(20),
+    IDCLIENTE INT,
+    TIPOMASCOTA VARCHAR(50),
+    RAZA VARCHAR(50)
+);
+
+INSERT INTO MASCOTA (ID, NOMBRE, APELLIDO, EDAD, TELEFONO, IDCLIENTE, TIPOMASCOTA, RAZA) VALUES
+(1, 'Rocky', 'Ramírez', 5, '0981-111111', 1, 'Perro', 'Labrador'),
+(2, 'Mimi', 'González', 3, '0981-222222', 2, 'Gato', 'Siames'),
+(3, 'Toby', 'Fernández', 2, '0981-333333', 3, 'Perro', 'Beagle');

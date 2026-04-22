@@ -1,0 +1,33 @@
+@startuml
+left to right direction
+title Diagrama de Contexto - Sistema Veterinaria - Modulo Clientes
+
+actor Clientes as cliente
+actor Mascotas as mascota
+actor Veterinarios as veterinario
+actor Funcionarios as funcionario
+actor Proveedores as proveedores
+actor Gerencia as gerencia
+
+package Veterinaria.Clientes {
+  usecase "Gestion de  Clientes" as MOD01CLI01
+  usecase "Gestion de Mascotas de Clientes" as MOD01CLI02
+  usecase "Gestion Consultas clinicas" as MOD01CLI03
+  usecase "Recordatorios de Servicios" as MOD01CLI04
+  usecase "Informe de Vacunacion de Mascotas" as MOD01CLI05
+  usecase "Gestion de Estudios Clinicos de Mascotas" as MOD01CLI06
+}
+
+cliente --> MOD01CLI01
+cliente --> MOD01CLI03
+mascota --> MOD01CLI02
+veterinario --> MOD01CLI03
+funcionario --> MOD01CLI01
+funcionario --> MOD01CLI02
+funcionario --> MOD01CLI03
+funcionario --> MOD01CLI04
+funcionario --> MOD01CLI05
+gerencia --> MOD01CLI06
+proveedores --> MOD01CLI01
+
+@enduml

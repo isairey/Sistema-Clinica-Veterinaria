@@ -1,0 +1,33 @@
+@startuml
+left to right direction
+title Diagrama de Contexto - Sistema Veterinaria
+actor Clientes as cliente
+actor Mascotas as mascota
+actor Veterinarios as veterinario
+actor Funcionarios as funcionario
+actor Gerenencia as gerente
+
+actor Proveedores as proveedores
+
+package Veterinaria {
+  usecase "Clientes" as MOD01
+  usecase "Compras" as MOD02
+  usecase "Ventas y Facturacion" as MOD03
+  usecase "RRHH" as MOD04
+  usecase "Inventario" as MOD05
+ usecase "Tesoreria" as MOD06
+}
+cliente --> MOD01
+mascota --> MOD01
+cliente --> MOD03
+proveedores --> MOD02
+veterinario --> MOD03
+funcionario -up-> MOD04
+funcionario -up-> MOD01
+funcionario -up-> MOD03
+funcionario -up-> MOD05
+gerencia -up-> MOD06
+gerencia -up-> MOD02
+
+
+@enduml
