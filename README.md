@@ -39,4 +39,4 @@ Este sistema está diseñado para cubrir las necesidades básicas de una clínic
 ### 1. Clonar el repositorio
 
 ```bash
-git clone <URL_DEL_REPOSITORIO>
+git clone https://github.com/isairey/Sistema-Clinica-Veterinaria.git
